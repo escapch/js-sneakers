@@ -1,0 +1,74 @@
+.cart {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0px;
+  // background: url('');
+  width: 385px;
+  height: 100%;
+  z-index: 100;
+  &__content {
+    background: #fff;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    gap: 50px;
+    padding: 32px 30px;
+
+    .cart__title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .closeCart {
+        transition: 0.3s;
+        transform: rotate(180deg);
+        .closeActive {
+          transform: rotate(50deg);
+        }
+      }
+    }
+  }
+  .cart__sneakers {
+    overflow: auto;
+  }
+  &__sneakers {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    .cart__item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 20px;
+      border: 1px solid #f3f3f3;
+      background: #fff;
+      width: 325px;
+      height: 119px;
+      overflow: hidden;
+      padding: 20px;
+      margin-bottom: 20px;
+      img {
+        width: 70px;
+      }
+      .removeBtn {
+        padding-top: 46px;
+        width: 32px;
+      }
+      .sneakers__price {
+        width: 150px;
+        p {
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+}
+.cart.cartActiv {
+  display: block;
+  //   position: fixed;
+  // width: 0px;
+
+  transition: 0.3s;
+  overflow: hidden;
+}
