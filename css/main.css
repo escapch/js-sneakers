@@ -120,7 +120,7 @@ main.main .main__content .title-search .search input {
   transition: 0.3s;
   display: flex;
   flex-direction: column;
-  min-height: 100%;
+  height: 100%;
   gap: 50px;
   padding: 32px 30px;
 }
@@ -136,13 +136,11 @@ main.main .main__content .title-search .search input {
 .cart__content .cart__title .closeCart .closeActive {
   transform: rotate(50deg);
 }
-.cart .cart__sneakers {
-  overflow: auto;
-}
 .cart__sneakers {
   display: flex;
   flex-direction: column;
-  flex: 1 1 auto;
+  flex: 1;
+  overflow: scroll;
 }
 .cart__sneakers .cart__item {
   display: flex;
@@ -154,7 +152,7 @@ main.main .main__content .title-search .search input {
   width: 325px;
   height: 119px;
   overflow: hidden;
-  padding: 20px;
+  padding: 50px 20px;
   margin-bottom: 20px;
 }
 .cart__sneakers .cart__item img {
